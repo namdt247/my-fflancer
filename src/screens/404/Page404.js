@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Login() {
+function Page404() {
   return (
     <div>
-      Login
+      404 | Not found
     </div>
   );
 }
 
-export default Login;
+export default Page404;
