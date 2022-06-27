@@ -9,9 +9,9 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.06);
   z-index: 9999;
-  cursor: pointer;
+  //cursor: pointer;
 
-  &--content {
+  &-content {
     position: absolute;
     top: 50%;
     left: 50%;

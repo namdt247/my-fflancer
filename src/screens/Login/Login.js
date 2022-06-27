@@ -1,10 +1,11 @@
 import React from 'react';
+import LayoutLogin from '../../layout/LayoutLogin';
 
 function Login() {
   return (
-    <div>
-      Login
-    </div>
+    <LayoutLogin>
+      <div>Login</div>
+    </LayoutLogin>
   );
 }
 
