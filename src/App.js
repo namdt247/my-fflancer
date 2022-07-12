@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import rootReducer from './reducers/rootReducer';
 import rootMiddleware from './middlewares/rootMiddleware';
 import RouteContent from './routers/RouteContent';
+import ToastMessage from './components/ToastMessage/ToastMessage';
 
 const sagaMiddleware = createSagaMiddleware();
 const store = createStore(rootReducer, applyMiddleware(sagaMiddleware));
@@ -14,6 +15,7 @@ function App() {
   return (
     <Provider store={store}>
       <RouteContent />
+      <ToastMessage />
     </Provider>
   );
 }

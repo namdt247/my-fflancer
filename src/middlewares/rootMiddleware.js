@@ -1,12 +1,10 @@
 import { all } from 'redux-saga/effects';
 import {
   watchLoginSubmit,
-  watchLogoutSubmit,
-} from './loginMiddleware';
+} from './authMiddleware';
 
 export default function* rootMiddleware() {
   yield all([
     watchLoginSubmit(),
-    watchLogoutSubmit(),
   ]);
 };

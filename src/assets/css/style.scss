@@ -1,1 +1,22 @@
 @import 'variables';
+
+.wrap-login {
+  height: 100vh;
+  margin: auto;
+  background-image: url("../../assets/images/system/bg-login.png");
+  background-size: cover;
+  .wrap-form-login {
+    background-color: white;
+    padding: 3rem 2.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    .text-login {
+      color: #5e6c84;
+      font-size: 26px;
+      font-weight: 500;
+    }
+    .icon-login {
+      color: rgba(0,0,0,0.25);
+    }
+  }
+}

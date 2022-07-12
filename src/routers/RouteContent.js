@@ -9,6 +9,7 @@ import Loading from '../components/Loading/Loading';
 import PublicRoute from './PublicRoute';
 import PrivateRoute from './PrivateRoute';
 import Home from '../screens/Home/Home';
+import Demo from '../screens/Demo/Demo';
 
 export default function RouteContent() {
   return (
@@ -58,6 +59,7 @@ export default function RouteContent() {
           exact
         />
         <Route path="*" element={<Page404 />} />
+        <Route path="/demo" element={<Demo />} />
       </Routes>
     </BrowserRouter>
   );

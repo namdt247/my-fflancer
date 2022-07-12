@@ -46,9 +46,8 @@ const requestDataAPI = async (url, method, params) => {
   try {
     const response = await requestAPI(url, method, params);
     if (response.status === 200) {
-      return response;
+      return response.data;
     }
-    console.log('error');
     return -1;
   } catch (error) {
     console.log(error);

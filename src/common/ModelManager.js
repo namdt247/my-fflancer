@@ -39,7 +39,7 @@ class ModelManager {
   };
 
   // eslint-disable-next-line class-methods-use-this
-  useAuth() {
+  useAuth = () => {
     const token = localStorage.getItem(Constants.StorageKey.KEY_TOKEN);
     return !!token;
   }
@@ -48,7 +48,7 @@ class ModelManager {
     localStorage.removeItem(Constants.StorageKey.KEY_TOKEN);
     localStorage.removeItem(Constants.StorageKey.KEY_USER_NAME);
     localStorage.removeItem(Constants.StorageKey.KEY_USER_ID);
-    this.setToken(null);
+    // this.setToken(null);
   };
 }
 
