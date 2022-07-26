@@ -1,6 +1,7 @@
 import axios from 'axios';
 import queryString from 'query-string';
 import Constants from '../common/Constants';
+import APICode from '../common/APICode';
 
 const fetchAPI = () => {
   const token = localStorage.getItem('token');
@@ -45,7 +46,7 @@ const requestAPI = (url, method, params) => {
 const requestDataAPI = async (url, method, params) => {
   try {
     const response = await requestAPI(url, method, params);
-    if (response.status === 200) {
+    if (response.status === APICode.SUCCESS) {
       return response.data;
     }
     return -1;

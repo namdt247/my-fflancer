@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import LayoutLogin from '../../layout/LayoutLogin';
+import LoginLayout from '../../layout/LoginLayout';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
 import { Button, Checkbox, Form, Input, message } from 'antd';
@@ -60,7 +60,7 @@ function Login() {
   }, [authReducer]);
 
   return (
-    <LayoutLogin>
+    <LoginLayout>
       <div className="d-flex align-items-center justify-content-center flex-column wrap-login">
         <div className="wrap-form-login">
           <div className="text-center px-5">
@@ -144,7 +144,7 @@ function Login() {
           </Form>
         </div>
       </div>
-    </LayoutLogin>
+    </LoginLayout>
   );
 }
 

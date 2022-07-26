@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import ModelManager from '../../common/ModelManager';
 import { Path } from '../../routers/Path';
 import { authActions } from '../../actions/authActions';
+import MainLayout from '../../layout/MainLayout';
 
 function Dashboard() {
   const dispatch = useDispatch();
@@ -17,14 +18,14 @@ function Dashboard() {
   }
 
   return (
-    <div>
+    <MainLayout>
       Dashboard
       <Button
         onClick={handleLogout}
       >
         Logout
       </Button>
-    </div>
+    </MainLayout>
   );
 }
 

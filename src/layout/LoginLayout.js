@@ -2,7 +2,7 @@ import React from 'react';
 import { Layout } from 'antd';
 import PropTypes from 'prop-types';
 
-function LayoutLogin(props) {
+function LoginLayout(props) {
   return (
     <Layout>
       <div>{props.children}</div>
@@ -10,8 +10,8 @@ function LayoutLogin(props) {
   );
 }
 
-LayoutLogin.prototype = {
-  children: PropTypes.any,
+LoginLayout.prototype = {
+  children: PropTypes.element.isRequired,
 }
 
-export default LayoutLogin;
+export default LoginLayout;

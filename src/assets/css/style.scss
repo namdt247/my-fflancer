@@ -20,3 +20,71 @@
     }
   }
 }
+
+.wrap-header {
+  background-color: #346cb0;
+  padding: 0 !important;
+}
+
+.header {
+  &-logo {
+    height: 28px;
+  }
+  &-company {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  &-dropdown-icon {
+    color: #a6abbd;
+  }
+  &-group-organ {
+    font-weight: 600;
+    color: #f7c46c;
+  }
+  &-organ {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: normal;
+  }
+  &-organ-2 {
+    font-size: 12px;
+    opacity: 0.7;
+  }
+  &-user-avatar {
+    color: #f56a00;
+    background-color: #fde3cf;
+  }
+  &-wrap-organ {
+    line-height: normal;
+  }
+  &-dropdown {
+    border-left: 1px solid rgba(34,34,48, 0.2);
+  }
+  &-dropdown:hover {
+    cursor: pointer;
+  }
+}
+
+.main-content {
+  min-height: calc(100vh - #{$header-height} - #{$footer-height});
+}
+
+.main-menu {
+  height: calc(100vh - #{$header-height} - 33px);
+  overflow-y: scroll;
+  &-group {
+    padding-left: 24px;
+    font-weight: 600;
+    padding-top: 2rem;
+    padding-bottom: 0.75rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &-icon {
+    color: #1890ff;
+  }
+}
+
+.sidebar-footer {
+  background-color: #e6f7ff;
+}

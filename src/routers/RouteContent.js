@@ -10,6 +10,13 @@ import PublicRoute from './PublicRoute';
 import PrivateRoute from './PrivateRoute';
 import Home from '../screens/Home/Home';
 import Demo from '../screens/Demo/Demo';
+import UserAdmin from '../screens/UserAdmin/UserAdmin';
+import UserNormal from '../screens/UserNormal/UserNormal';
+import Freelancer from '../screens/Freelancer/Freelancer';
+import Job from '../screens/Job/Job';
+import Transaction from '../screens/Transaction/Transaction';
+import MainReport from '../screens/MainReport/MainReport';
+import ReportFinancial from '../screens/ReportFinancial/ReportFinancial';
 
 export default function RouteContent() {
   return (
@@ -54,6 +61,69 @@ export default function RouteContent() {
           element={
             <PrivateRoute>
               <Loading />
+            </PrivateRoute>
+          }
+          exact
+        />
+        <Route
+          path={Path.ADMIN_MANAGEMENT}
+          element={
+            <PrivateRoute>
+              <UserAdmin />
+            </PrivateRoute>
+          }
+          exact
+        />
+        <Route
+          path={Path.USER_MANAGEMENT}
+          element={
+            <PrivateRoute>
+              <UserNormal />
+            </PrivateRoute>
+          }
+          exact
+        />
+        <Route
+          path={Path.FREELANCER_MANAGEMENT}
+          element={
+            <PrivateRoute>
+              <Freelancer />
+            </PrivateRoute>
+          }
+          exact
+        />
+        <Route
+          path={Path.JOB_MANAGEMENT}
+          element={
+            <PrivateRoute>
+              <Job />
+            </PrivateRoute>
+          }
+          exact
+        />
+        <Route
+          path={Path.TRANSACTION_MANAGEMENT}
+          element={
+            <PrivateRoute>
+              <Transaction />
+            </PrivateRoute>
+          }
+          exact
+        />
+        <Route
+          path={Path.MAIN_REPORT}
+          element={
+            <PrivateRoute>
+              <MainReport />
+            </PrivateRoute>
+          }
+          exact
+        />
+        <Route
+          path={Path.REPORT_FINANCIAL}
+          element={
+            <PrivateRoute>
+              <ReportFinancial />
             </PrivateRoute>
           }
           exact
