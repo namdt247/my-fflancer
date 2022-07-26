@@ -1,5 +1,5 @@
 import React from 'react';
-import ModelManager from '../../common/ModelManager';
+import ModelManager from '../../utils/ModelManager';
 import { Link, useNavigate } from 'react-router-dom';
 import { Path } from '../../routers/Path';
 import logo from '../../assets/images/logo.png';

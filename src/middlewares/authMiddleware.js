@@ -1,8 +1,8 @@
 import { takeEvery, put } from 'redux-saga/effects';
 import { authAPI } from '../requests/api/authAPI';
 import API from '../requests/fetchAPI';
-import APICode from '../common/APICode';
-import ModelManager from '../common/ModelManager';
+import APICode from '../utils/APICode';
+import ModelManager from '../utils/ModelManager';
 import { authActionTypes } from '../actions/types/authActionTypes';
 
 function* loginSubmit({ params }) {

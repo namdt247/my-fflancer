@@ -1,7 +1,7 @@
 import axios from 'axios';
 import queryString from 'query-string';
-import Constants from '../common/Constants';
-import APICode from '../common/APICode';
+import Constants from '../utils/Constants';
+import APICode from '../utils/APICode';
 
 const fetchAPI = () => {
   const token = localStorage.getItem('token');

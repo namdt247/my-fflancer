@@ -8,8 +8,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { authActions } from '../../actions/authActions';
 import { authActionTypes } from '../../actions/types/authActionTypes';
 import { Path } from '../../routers/Path';
-import APICode from '../../common/APICode';
-import { contentMessage, notifyMessage } from '../../common/Message';
+import APICode from '../../utils/APICode';
+import { contentMessage, notifyMessage } from '../../utils/Message';
 
 function Login() {
   const dispatch = useDispatch();

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navigate } from 'react-router-dom';
-import ModelManager from '../common/ModelManager';
+import ModelManager from '../utils/ModelManager';
 import { Path } from './Path';
 import PropTypes from 'prop-types';
 

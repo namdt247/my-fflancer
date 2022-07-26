@@ -12,7 +12,7 @@ import {
 } from '@ant-design/icons';
 import { Link, useLocation } from 'react-router-dom';
 import { Path } from '../../routers/Path';
-import { account, group, main, freelancer, job, transaction, report } from '../../common/MainMenu';
+import { account, group, main, freelancer, job, transaction, report } from '../../utils/MainMenu';
 import HeaderSidebar from './HeaderSidebar';
 import PropTypes from 'prop-types';
 
