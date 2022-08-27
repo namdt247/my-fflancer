@@ -2,10 +2,11 @@ import axios from 'axios';
 import queryString from 'query-string';
 import Constants from '../utils/Constants';
 import APICode from '../utils/APICode';
+import ModelManager from "../utils/ModelManager";
 
 const fetchAPI = () => {
-  const token = localStorage.getItem('token');
-  return axios.create({
+  const token = ModelManager.token;
+  const instance = axios.create({
     baseURL: process.env.REACT_APP_API_URL,
     headers: {
       'Content-Type': 'application/json; charset=utf-8',
@@ -15,6 +16,7 @@ const fetchAPI = () => {
     timeout: Constants.TIMEOUT_REQUEST_API * 60 * 1000,
     paramsSerializer: (params) => queryString.stringify(params),
   });
+  return instance;
 };
 
 const requestAPI = (url, method, params) => {
